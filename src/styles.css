@@ -3,44 +3,44 @@
 :root {
   font-family:
     "DM Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-  color: #c0c7c1;
-  background: #101413;
+  color: #c5c8d0;
+  background: #151619;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  --page: #101413;
-  --surface: #151a17;
-  --sidebar: #141915;
-  --toolbar: #1b211d;
-  --input: #171d19;
-  --border: #2a322b;
-  --text: #c0c7c1;
-  --heading: #e1e6df;
-  --muted: #8c978e;
-  --faint: #6d7c70;
-  --accent: #b3e994;
-  --accent-dim: #253522;
-  --hover: #202a21;
-  --tag: #1c241e;
-  --error: #edab9d;
+  --page: #151619;
+  --surface: #1e1f22;
+  --sidebar: #1b1c1f;
+  --toolbar: #282a2e;
+  --input: #23252a;
+  --border: #34373e;
+  --text: #c5c8d0;
+  --heading: #f0f1f4;
+  --muted: #a0a7b4;
+  --faint: #8e98a9;
+  --accent: #82aaff;
+  --accent-dim: #263650;
+  --hover: #2a2d33;
+  --tag: #25272d;
+  --error: #f09595;
   color-scheme: dark;
 }
 :root[data-theme="light"] {
-  --page: #e9ece6;
-  --surface: #f9faf6;
-  --sidebar: #f0f3eb;
-  --toolbar: #e9eee3;
-  --input: #f3f6ed;
-  --border: #d2dacb;
-  --text: #465242;
-  --heading: #202f1c;
-  --muted: #667260;
-  --faint: #6c7967;
-  --accent: #3c6927;
-  --accent-dim: #deebd4;
-  --hover: #e4ecdc;
-  --tag: #edf2e6;
-  --error: #a34230;
+  --page: #f3f5f8;
+  --surface: #ffffff;
+  --sidebar: #f6f7f9;
+  --toolbar: #ebedf1;
+  --input: #f8f9fc;
+  --border: #d8dee8;
+  --text: #3e4758;
+  --heading: #202632;
+  --muted: #637086;
+  --faint: #5e6b80;
+  --accent: #2b5fc7;
+  --accent-dim: #e7eefc;
+  --hover: #edf1f7;
+  --tag: #f3f5f8;
+  --error: #ab3d42;
   color-scheme: light;
 }
 :root[data-theme="green"] {
@@ -238,13 +238,13 @@ kbd {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #ce7169;
+  background: #f26b68;
 }
 .window-lights span:nth-child(2) {
-  background: #c1a65e;
+  background: #e7b95a;
 }
 .window-lights span:nth-child(3) {
-  background: #7ba377;
+  background: #68b889;
 }
 .window-title {
   position: absolute;
@@ -434,7 +434,7 @@ kbd {
   align-items: center;
   gap: 17px;
   margin: 30px 0 20px;
-  color: var(--accent);
+  color: var(--heading);
   user-select: none;
 }
 .hero-name pre {
@@ -454,7 +454,7 @@ kbd {
 }
 .name-dot {
   font-size: 48px;
-  color: var(--faint);
+  color: var(--accent);
 }
 .role-line {
   font-family: "Space Grotesk", sans-serif;
@@ -1108,10 +1108,10 @@ kbd {
   border: 1px solid var(--faint);
 }
 .theme-swatch.dark {
-  background: #151a17;
+  background: #1e1f22;
 }
 .theme-swatch.light {
-  background: #f9faf6;
+  background: #ffffff;
 }
 .theme-swatch.green {
   background: #68f394;
