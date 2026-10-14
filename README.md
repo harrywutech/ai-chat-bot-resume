@@ -2,6 +2,8 @@
 
 A terminal-style personal portfolio built with React, TypeScript, and Vite. Content is based on Harry Wu’s supplied resume.
 
+The home screen highlights experience, checkout performance, and technical leadership, with direct resume download and email contact links. The sidebar and slash-command picker provide access to the detailed portfolio.
+
 Production URL: <https://harrywutech.github.io/ai-chat-bot-resume/>
 
 ## Local development

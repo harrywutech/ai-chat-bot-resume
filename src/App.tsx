@@ -268,7 +268,7 @@ function App() {
           </span>
         </div>
         <div className="role-line">
-          <span>Full-Stack Developer</span>
+          <span>Senior Full-Stack Developer</span>
           <span className="role-secondary">
             <span className="muted">/</span> AI Applications
           </span>
@@ -282,9 +282,7 @@ function App() {
           </span>
         </div>
         <p className="intro">
-          I build enterprise ecommerce website and AI-powered applications.
-          <br className="desktop-break" /> Thoughtful architecture. Reliable
-          systems. Real-world impact.
+          I build enterprise e-commerce websites and AI-powered applications.
         </p>
         <div className="welcome-metrics">
           <div>
@@ -295,59 +293,26 @@ function App() {
           </div>
           <div>
             <strong>
-              Full<span> stack</span>
+              ~3s <span>→</span> ~1s
             </strong>
-            <span>from interface to infrastructure</span>
+            <span>cart &amp; checkout response</span>
           </div>
           <div>
-            <strong>
-              AI<span> powered</span>
-            </strong>
-            <span>grounded in practical engineering</span>
+            <strong>5</strong>
+            <span>developers · technical lead</span>
           </div>
         </div>
-        <div className="getting-started">
-          <span className="eyebrow">A FEW GOOD PLACES TO START</span>
-          <div className="quick-links">
-            {cmd(
-              "/About",
-              <>
-                <span>/About</span>
-                <ArrowUpRight size={14} />
-              </>,
-              "quick-link",
-            )}
-            {cmd(
-              "/Skills",
-              <>
-                <span>/Skills</span>
-                <ArrowUpRight size={14} />
-              </>,
-              "quick-link",
-            )}
-            {cmd(
-              "/Projects",
-              <>
-                <span>/Projects</span>
-                <ArrowUpRight size={14} />
-              </>,
-              "quick-link",
-            )}
-            {cmd(
-              "/Resume",
-              <>
-                <span>/Resume</span>
-                <ArrowUpRight size={14} />
-              </>,
-              "quick-link",
-            )}
-          </div>
-        </div>
-        <div className="welcome-hint">
-          <CircleHelp size={14} />
-          <span>
-            Curiosity is the only prerequisite. Type {cmd("/Help")} to explore.
-          </span>
+        <div className="action-row welcome-actions">
+          <a
+            className="primary-action"
+            href={resumeUrl}
+            download="Harry-Wu-Resume.pdf"
+          >
+            <ArrowDownToLine size={16} /> Download Resume
+          </a>
+          <a className="secondary-action" href={`mailto:${profile.email}`}>
+            <Mail size={16} /> Contact Me
+          </a>
         </div>
       </div>
     );

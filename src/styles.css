@@ -122,7 +122,7 @@ a {
     border-color 0.15s;
 }
 p {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.95;
   margin: 0 0 17px;
 }
@@ -132,7 +132,7 @@ h3 {
   font-weight: 500;
 }
 h3 {
-  font-size: 14px;
+  font-size: 15px;
   margin: 0 0 9px;
 }
 kbd {
@@ -166,7 +166,7 @@ kbd {
   color: var(--error);
 }
 .eyebrow {
-  font-size: 9px;
+  font-size: 10px;
   letter-spacing: 1.6px;
   color: var(--muted);
   line-height: 1.7;
@@ -301,7 +301,7 @@ kbd {
   gap: 8px;
   align-items: center;
   color: var(--muted);
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 1.5px;
   padding: 0 11px;
   margin-bottom: 23px;
@@ -313,7 +313,7 @@ kbd {
   display: flex;
   align-items: center;
   gap: 7px;
-  font-size: 11px;
+  font-size: 12px;
   text-align: left;
   padding: 7px;
   color: var(--muted);
@@ -328,7 +328,7 @@ kbd {
   display: block;
   padding: 0 13px;
   margin-bottom: 9px;
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 1.3px;
   color: var(--faint);
 }
@@ -338,7 +338,7 @@ kbd {
   width: 100%;
   gap: 8px;
   padding: 9px 12px;
-  font-size: 11px;
+  font-size: 13px;
   border-radius: 4px;
   min-height: 33px;
   color: var(--muted);
@@ -376,7 +376,7 @@ kbd {
   align-items: center;
   gap: 7px;
   width: 100%;
-  font-size: 10px;
+  font-size: 12px;
   margin-bottom: 22px;
 }
 .sidebar-bottom button:hover {
@@ -389,7 +389,7 @@ kbd {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 8px;
+  font-size: 10px;
   color: var(--faint);
 }
 .tiny-square {
@@ -420,7 +420,7 @@ kbd {
   display: flex;
   align-items: center;
   gap: 9px;
-  font-size: 8px;
+  font-size: 10px;
   color: var(--muted);
   letter-spacing: 1.4px;
 }
@@ -472,7 +472,7 @@ kbd {
   align-items: center;
   gap: 7px;
   color: var(--muted);
-  font-size: 9px;
+  font-size: 11px;
   margin-top: 12px;
   line-height: 1.7;
   flex-wrap: wrap;
@@ -485,7 +485,7 @@ kbd {
   color: var(--faint);
 }
 .intro {
-  font-size: 11px;
+  font-size: 15px;
   line-height: 1.9;
   margin-top: 24px;
   margin-bottom: 0;
@@ -519,49 +519,9 @@ kbd {
   letter-spacing: -0.4px;
 }
 .welcome-metrics > div > span {
-  font-size: 8px;
+  font-size: 11px;
   line-height: 1.6;
   color: var(--muted);
-}
-.getting-started > .eyebrow {
-  font-size: 8px;
-  letter-spacing: 1.4px;
-}
-.quick-links {
-  display: flex;
-  gap: 9px;
-  margin-top: 12px;
-}
-.quick-link {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  padding: 10px 12px;
-  color: var(--accent);
-  font-size: 10px;
-  min-width: 110px;
-}
-.quick-link svg {
-  color: var(--faint);
-}
-.quick-link:hover {
-  border-color: var(--accent);
-  background: var(--hover);
-}
-.quick-link:hover svg {
-  color: var(--accent);
-}
-.welcome-hint {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  color: var(--faint);
-  font-size: 8px;
-  margin-top: 26px;
-  line-height: 1.8;
 }
 .text-command {
   color: var(--accent);
@@ -589,7 +549,7 @@ kbd {
   display: flex;
   align-items: center;
   gap: 9px;
-  font-size: 11px;
+  font-size: 12px;
   color: var(--accent);
 }
 .prompt-path {
@@ -606,14 +566,14 @@ kbd {
   flex: 1;
   color: var(--heading);
   background: transparent;
-  font-size: 11px;
+  font-size: 14px;
   caret-color: var(--accent);
   height: 26px;
   padding: 0;
 }
 .prompt input::placeholder {
   color: var(--faint);
-  font-size: 10px;
+  font-size: 12px;
 }
 .submit-command {
   border: 1px solid var(--border);
@@ -636,7 +596,7 @@ kbd {
   display: flex;
   justify-content: space-between;
   margin-top: 9px;
-  font-size: 8px;
+  font-size: 10px;
   color: var(--faint);
   line-height: 1.5;
 }
@@ -645,7 +605,7 @@ kbd {
   padding: 0;
   margin-right: 4px;
   background: transparent;
-  font-size: 8px;
+  font-size: 10px;
 }
 .hint-divider {
   margin: 0 7px;
@@ -654,7 +614,7 @@ kbd {
   display: flex;
   align-items: center;
   gap: 5px;
-  font-size: 8px;
+  font-size: 10px;
   color: var(--muted);
   padding: 0;
 }
@@ -718,7 +678,7 @@ kbd {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 10px;
+  font-size: 12px;
   color: var(--accent);
   margin-bottom: 26px;
   overflow-wrap: anywhere;
@@ -751,13 +711,13 @@ kbd {
   border-top: 1px solid var(--border);
   padding-top: 18px;
   margin-top: 24px;
-  font-size: 10px;
+  font-size: 12px;
   color: var(--muted);
   line-height: 1.8;
 }
 .output-next > span {
   flex-basis: 100%;
-  font-size: 9px;
+  font-size: 11px;
 }
 .skill-group {
   padding: 22px 0;
@@ -772,7 +732,7 @@ kbd {
 .skill-group h3 {
   display: flex;
   justify-content: space-between;
-  font-size: 13px;
+  font-size: 15px;
   color: var(--accent);
 }
 .skill-group h3 span {
@@ -786,7 +746,7 @@ kbd {
   margin: 13px 0 0;
 }
 .tag {
-  font-size: 9px;
+  font-size: 11px;
   line-height: 1.6;
   color: var(--muted);
   background: var(--tag);
@@ -795,7 +755,7 @@ kbd {
   border-radius: 3px;
 }
 .skill-group p {
-  font-size: 11px;
+  font-size: 14px;
   margin: 12px 0 8px;
   color: var(--muted);
 }
@@ -803,7 +763,7 @@ kbd {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  font-size: 9px;
+  font-size: 12px;
 }
 .project {
   display: flex;
@@ -827,7 +787,7 @@ kbd {
   min-width: 0;
 }
 .project-body .eyebrow {
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 1px;
 }
 .project h3 {
@@ -840,7 +800,7 @@ kbd {
   align-items: center;
   gap: 10px;
   padding: 0;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.6;
 }
 .project-title:hover {
@@ -850,13 +810,13 @@ kbd {
   color: var(--accent);
 }
 .project p {
-  font-size: 11px;
+  font-size: 14px;
   color: var(--muted);
   margin-bottom: 12px;
 }
 .detail-list {
   padding-left: 15px;
-  font-size: 11px;
+  font-size: 14px;
   line-height: 1.95;
   color: var(--text);
 }
@@ -892,12 +852,12 @@ kbd {
   margin: 9px 0 7px;
 }
 .job-meta {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--accent);
   line-height: 1.8;
 }
 .timeline p {
-  font-size: 11px;
+  font-size: 14px;
   color: var(--muted);
   margin: 10px 0 0;
 }
@@ -916,16 +876,16 @@ kbd {
   letter-spacing: -1.5px;
 }
 .impact-row h3 {
-  font-size: 13px;
+  font-size: 15px;
   margin-bottom: 8px;
 }
 .impact-row p {
-  font-size: 11px;
+  font-size: 14px;
   color: var(--muted);
   margin-bottom: 0;
 }
 .footnote {
-  font-size: 9px;
+  font-size: 11px;
   color: var(--faint);
   margin-top: 18px;
 }
@@ -945,10 +905,10 @@ kbd {
 .resume-file strong {
   font-weight: 400;
   color: var(--heading);
-  font-size: 13px;
+  font-size: 15px;
 }
 .resume-file span {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--muted);
 }
 .action-row {
@@ -966,7 +926,7 @@ kbd {
   border: 1px solid var(--border);
   padding: 11px 14px;
   border-radius: 4px;
-  font-size: 10px;
+  font-size: 13px;
 }
 .primary-action {
   background: var(--accent);
@@ -995,7 +955,7 @@ kbd {
 .education-list p {
   margin: 0;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 14px;
 }
 .contact-list {
   margin: 25px 0;
@@ -1007,7 +967,7 @@ kbd {
   border-top: 1px solid var(--border);
   padding: 20px 0;
   color: var(--heading);
-  font-size: 11px;
+  font-size: 13px;
   overflow-wrap: anywhere;
 }
 .contact-list > a:last-child {
@@ -1026,7 +986,7 @@ kbd {
 }
 .contact-list small {
   display: block;
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 1px;
   color: var(--muted);
   margin-bottom: 8px;
@@ -1038,14 +998,14 @@ kbd {
   flex-wrap: wrap;
 }
 .copy-email > span {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--muted);
 }
 .help-list > div {
   display: grid;
   grid-template-columns: 125px 1fr;
   gap: 12px;
-  font-size: 11px;
+  font-size: 13px;
   line-height: 1.8;
   padding: 9px 0;
   border-bottom: 1px solid var(--border);
@@ -1058,7 +1018,7 @@ kbd {
   align-items: flex-start;
   flex-direction: column;
   gap: 11px;
-  font-size: 10px;
+  font-size: 12px;
   margin: 27px 0;
 }
 .syntax-examples .eyebrow {
@@ -1068,7 +1028,7 @@ kbd {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
-  font-size: 9px;
+  font-size: 11px;
   color: var(--muted);
   line-height: 1.9;
 }
@@ -1088,7 +1048,7 @@ kbd {
   padding: 12px 15px;
   border: 1px solid var(--border);
   border-radius: 4px;
-  font-size: 11px;
+  font-size: 13px;
   min-width: 120px;
 }
 .theme-option.chosen {
@@ -1117,7 +1077,7 @@ kbd {
   background: #68f394;
 }
 .history-list {
-  font-size: 11px;
+  font-size: 13px;
   line-height: 2.1;
   color: var(--faint);
   padding-left: 28px;
@@ -1138,7 +1098,7 @@ kbd {
   color: var(--heading);
 }
 .cleared > span {
-  font-size: 11px;
+  font-size: 13px;
 }
 .unknown-command p {
   margin-bottom: 8px;
@@ -1159,7 +1119,7 @@ kbd {
   z-index: 10;
 }
 .menu-heading {
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 1px;
   color: var(--muted);
   padding: 9px 9px 13px;
@@ -1168,7 +1128,7 @@ kbd {
   gap: 10px;
 }
 .menu-heading > span {
-  font-size: 8px;
+  font-size: 9px;
   letter-spacing: 0;
   color: var(--faint);
 }
@@ -1182,7 +1142,7 @@ kbd {
   align-items: center;
   width: 100%;
   gap: 15px;
-  font-size: 10px;
+  font-size: 13px;
   padding: 10px;
   border-radius: 3px;
   text-align: left;
@@ -1194,7 +1154,7 @@ kbd {
 }
 .menu-options > button > span:nth-child(2) {
   color: var(--muted);
-  font-size: 9px;
+  font-size: 12px;
   line-height: 1.4;
 }
 .menu-options > button.selected {
@@ -1231,9 +1191,6 @@ kbd {
   .intro {
     margin-top: 28px;
   }
-  .welcome-hint {
-    margin-top: 35px;
-  }
 }
 @media (max-width: 1100px) {
   .site-shell {
@@ -1262,12 +1219,6 @@ kbd {
   }
   .role-line {
     font-size: 18px;
-  }
-  .quick-link {
-    min-width: 0;
-    flex: 1;
-    gap: 9px;
-    padding: 10px;
   }
   .welcome-metrics {
     gap: 12px;
@@ -1307,7 +1258,7 @@ kbd {
     padding-right: 6px;
   }
   .nav-command {
-    font-size: 10px;
+    font-size: 13px;
     padding: 9px 10px;
   }
   .nav-index {
@@ -1318,10 +1269,10 @@ kbd {
     padding-right: 7px;
   }
   .sidebar-bottom button {
-    font-size: 9px;
+    font-size: 12px;
   }
   .sidebar-bottom > div {
-    font-size: 7px;
+    font-size: 10px;
   }
   .window-body {
     height: calc(100dvh - 167px);
@@ -1347,35 +1298,14 @@ kbd {
     max-width: 330px;
   }
   .intro {
-    font-size: 11px;
+    font-size: 15px;
     margin-top: 18px;
-  }
-  .desktop-break {
-    display: none;
   }
   .welcome-metrics {
     grid-template-columns: 0.7fr 1fr;
     gap: 20px 10px;
     margin-top: 23px;
     margin-bottom: 25px;
-  }
-  .welcome-metrics > div:last-child {
-    display: none;
-  }
-  .quick-links {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .quick-link {
-    font-size: 10px;
-  }
-  .welcome-hint {
-    margin-top: 20px;
-    align-items: flex-start;
-    font-size: 8px;
-  }
-  .welcome-hint > svg {
-    margin-top: 2px;
   }
   .input-area {
     padding: 13px 17px 10px;
@@ -1385,22 +1315,22 @@ kbd {
   }
   .prompt label {
     gap: 6px;
-    font-size: 10px;
+    font-size: 12px;
   }
   .prompt input {
-    font-size: 10px;
+    font-size: 14px;
   }
   .prompt input::placeholder {
-    font-size: 9px;
+    font-size: 12px;
   }
   .submit-command > span:first-child {
     display: none;
   }
   .input-hints {
-    font-size: 7px;
+    font-size: 10px;
   }
   .input-hints kbd {
-    font-size: 7px;
+    font-size: 10px;
   }
   .hint-divider {
     margin: 0 3px;
@@ -1430,7 +1360,7 @@ kbd {
     gap: 11px;
   }
   .project-title {
-    font-size: 13px;
+    font-size: 16px;
   }
   .impact-row {
     gap: 17px;
@@ -1441,7 +1371,7 @@ kbd {
   }
   .help-list > div {
     grid-template-columns: 100px 1fr;
-    font-size: 10px;
+    font-size: 13px;
   }
   .command-menu {
     left: 8px;
@@ -1453,13 +1383,13 @@ kbd {
   }
   .menu-options > button > span:first-child {
     width: 90px;
-    font-size: 10px;
+    font-size: 13px;
   }
   .menu-options > button > span:nth-child(2) {
-    font-size: 8px;
+    font-size: 12px;
   }
   .menu-heading > span {
-    font-size: 7px;
+    font-size: 9px;
   }
   .window-title {
     font-size: 9px;
@@ -1540,7 +1470,7 @@ kbd {
     padding: 25px 21px;
   }
   .boot-line {
-    font-size: 7px;
+    font-size: 10px;
     letter-spacing: 1px;
   }
   .hero-name {
@@ -1556,7 +1486,7 @@ kbd {
     line-height: 1.6;
   }
   .location {
-    font-size: 8px;
+    font-size: 11px;
     gap: 5px;
     margin-top: 9px;
   }
@@ -1570,7 +1500,7 @@ kbd {
     max-width: 245px;
   }
   .intro {
-    font-size: 10px;
+    font-size: 15px;
     line-height: 1.95;
     margin-top: 18px;
     max-width: 355px;
@@ -1584,39 +1514,20 @@ kbd {
     font-size: 23px;
   }
   .welcome-metrics > div > span {
-    font-size: 7px;
-  }
-  .getting-started > .eyebrow {
-    font-size: 7px;
-    letter-spacing: 1.1px;
-  }
-  .quick-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 7px;
-    margin-top: 10px;
-  }
-  .quick-link {
-    flex: 1 1 40%;
-    padding: 9px 10px;
-    font-size: 10px;
-  }
-  .welcome-hint {
-    font-size: 7px;
-    margin-top: 19px;
+    font-size: 11px;
   }
   .input-area {
     padding: 12px 15px 10px;
   }
   .prompt label {
-    font-size: 10px;
+    font-size: 12px;
     gap: 5px;
   }
   .prompt input {
-    font-size: 11px;
+    font-size: 14px;
   }
   .prompt input::placeholder {
-    font-size: 8px;
+    font-size: 12px;
   }
   .input-hints {
     margin-top: 7px;
@@ -1640,15 +1551,15 @@ kbd {
     font-size: 22px;
   }
   .executed-command {
-    font-size: 9px;
+    font-size: 12px;
     gap: 7px;
     flex-wrap: wrap;
   }
   .command-result p {
-    font-size: 11px;
+    font-size: 14px;
   }
   .contact-list > a {
-    font-size: 10px;
+    font-size: 13px;
     gap: 12px;
   }
   .contact-list > a > svg {
@@ -1664,22 +1575,22 @@ kbd {
   }
   .help-list > div {
     grid-template-columns: 90px 1fr;
-    font-size: 9px;
+    font-size: 13px;
     gap: 5px;
   }
   .menu-heading {
-    font-size: 7px;
+    font-size: 10px;
     padding-left: 5px;
     padding-right: 5px;
   }
   .menu-heading > span {
-    font-size: 6px;
+    font-size: 9px;
   }
   .menu-options > button > span:first-child {
     width: 88px;
   }
   .menu-options > button > span:nth-child(2) {
-    font-size: 8px;
+    font-size: 12px;
   }
   .menu-enter {
     display: none;
@@ -1689,13 +1600,13 @@ kbd {
     padding: 10px;
   }
   .output-next {
-    font-size: 9px;
+    font-size: 12px;
   }
   .job-meta {
-    font-size: 9px;
+    font-size: 12px;
   }
   .project-body .eyebrow {
-    font-size: 7px;
+    font-size: 10px;
   }
   .project {
     gap: 10px;
@@ -1704,7 +1615,7 @@ kbd {
     font-size: 9px;
   }
   .education-list h3 {
-    font-size: 12px;
+    font-size: 15px;
   }
   .contact-list {
     margin: 18px 0;
@@ -1745,7 +1656,7 @@ kbd {
     display: none;
   }
   .menu-options > button > span:nth-child(2) {
-    font-size: 7px;
+    font-size: 12px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -1759,42 +1670,35 @@ kbd {
 }
 /* Comfortable reading sizes, including compact terminal layouts. */
 .nav-command {
-  font-size: 12px;
+  font-size: 13px;
 }
 .intro {
-  font-size: 12px;
+  font-size: 15px;
 }
 .project p,
 .timeline p,
 .skill-group p,
 .detail-list,
 .impact-row p {
-  font-size: 12px;
+  font-size: 14px;
 }
 .welcome-metrics > div > span {
-  font-size: 9px;
-}
-.boot-line,
-.getting-started > .eyebrow {
-  font-size: 9px;
-}
-.welcome-hint {
-  font-size: 9px;
-}
-.quick-link {
   font-size: 11px;
 }
-.location {
+.boot-line {
   font-size: 10px;
+}
+.location {
+  font-size: 11px;
 }
 .project-body .eyebrow {
-  font-size: 9px;
-}
-.tag {
   font-size: 10px;
 }
+.tag {
+  font-size: 11px;
+}
 .input-hints {
-  font-size: 9px;
+  font-size: 10px;
 }
 .site-footer {
   font-size: 9px;
@@ -1803,22 +1707,22 @@ kbd {
   font-size: 9px;
 }
 .directory-label {
-  font-size: 10px;
+  font-size: 11px;
 }
 .nav-label {
-  font-size: 9px;
+  font-size: 10px;
 }
 .sidebar-bottom button {
-  font-size: 11px;
+  font-size: 12px;
 }
 .prompt input {
-  font-size: 12px;
+  font-size: 14px;
 }
 .prompt input::placeholder {
-  font-size: 11px;
+  font-size: 12px;
 }
 .command-result > p {
-  font-size: 12px;
+  font-size: 14px;
 }
 .window-title {
   font-size: 11px;
@@ -1837,7 +1741,7 @@ kbd {
     font-size: 8px;
   }
   .nav-command {
-    font-size: 11px;
+    font-size: 13px;
   }
 }
 @media (max-width: 760px) {
@@ -1857,19 +1761,16 @@ kbd {
     font-size: 32px;
   }
   .sidebar-bottom button {
-    font-size: 9px;
+    font-size: 12px;
   }
   .header-label {
     font-size: 7px;
   }
   .nav-command {
-    font-size: 11px;
-  }
-  .welcome-hint {
-    font-size: 9px;
+    font-size: 13px;
   }
   .welcome-metrics > div > span {
-    font-size: 8px;
+    font-size: 11px;
   }
   .status-bar {
     font-size: 8px;
@@ -1878,13 +1779,13 @@ kbd {
     font-size: 8px;
   }
   .prompt input::placeholder {
-    font-size: 9px;
+    font-size: 12px;
   }
   .role-line {
     font-size: 19px;
   }
   .location {
-    font-size: 9px;
+    font-size: 11px;
   }
 }
 @media (max-width: 560px) {
@@ -1903,7 +1804,7 @@ kbd {
     font-size: 28px;
   }
   .intro {
-    font-size: 11px;
+    font-size: 15px;
   }
   .role-line {
     font-size: 18px;
@@ -1911,15 +1812,8 @@ kbd {
   .header-label {
     font-size: 6px;
   }
-  .boot-line,
-  .getting-started > .eyebrow {
-    font-size: 8px;
-  }
-  .welcome-hint {
-    font-size: 8px;
-  }
-  .quick-link {
-    font-size: 11px;
+  .boot-line {
+    font-size: 10px;
   }
   .site-footer {
     font-size: 8px;
@@ -1931,10 +1825,10 @@ kbd {
     font-size: 10px;
   }
   .project-body .eyebrow {
-    font-size: 8px;
+    font-size: 10px;
   }
   .input-hints {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 @media (max-width: 370px) {
@@ -1952,10 +1846,10 @@ kbd {
     font-size: 17px;
   }
   .intro {
-    font-size: 11px;
+    font-size: 15px;
   }
   .prompt input::placeholder {
-    font-size: 8px;
+    font-size: 12px;
   }
 }
 .window-body {
@@ -2000,7 +1894,7 @@ kbd {
     display: inline;
   }
   .building-since {
-    font-size: 8px;
+    font-size: 10px;
   }
   .role-line {
     gap: 0 9px;
@@ -2008,5 +1902,207 @@ kbd {
   }
   .role-secondary > .muted {
     margin-right: 3px;
+  }
+}
+
+/* Recruiter-facing overview: outcomes first, with two direct actions. */
+.sidebar {
+  width: 210px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+.hero-name {
+  margin: 24px 0 20px;
+}
+.hero-name pre {
+  font-size: 9px;
+}
+.surname {
+  font-size: 55px;
+}
+.role-line {
+  font-size: 22px;
+  max-width: none;
+}
+.intro {
+  margin-top: 20px;
+  max-width: 660px;
+  line-height: 1.85;
+}
+.welcome-metrics {
+  grid-template-columns: 0.8fr 1.15fr 1fr;
+  margin: 26px 0;
+  padding: 23px 0;
+  gap: 20px;
+}
+.welcome-metrics strong {
+  font-size: 29px;
+  white-space: nowrap;
+}
+.welcome-metrics strong span {
+  font-size: inherit;
+}
+.welcome-metrics > div {
+  display: flex;
+  gap: 10px;
+}
+.welcome-actions {
+  gap: 12px;
+}
+.primary-action,
+.secondary-action {
+  min-height: 44px;
+  padding: 12px 17px;
+  line-height: 1.4;
+}
+.nav-command {
+  min-height: 38px;
+}
+.prompt input {
+  height: 30px;
+}
+.menu-options > button {
+  min-height: 44px;
+}
+.help-list > div {
+  grid-template-columns: 140px 1fr;
+}
+@media (min-width: 1450px) {
+  .hero-name pre {
+    font-size: 10px;
+  }
+  .surname {
+    font-size: 62px;
+  }
+}
+@media (max-width: 1100px) {
+  .sidebar {
+    width: 195px;
+  }
+  .hero-name pre {
+    font-size: 9px;
+  }
+  .surname {
+    font-size: 55px;
+  }
+  .welcome-metrics {
+    gap: 16px;
+  }
+}
+@media (max-width: 760px) {
+  .sidebar {
+    width: 175px;
+  }
+  .hero-name pre {
+    font-size: 8px;
+  }
+  .surname {
+    font-size: 45px;
+  }
+  .welcome-metrics {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .welcome-metrics > div {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    align-items: center;
+    gap: 12px;
+  }
+  .welcome-metrics strong {
+    font-size: 24px;
+  }
+  .role-line {
+    font-size: 21px;
+  }
+  .welcome-actions {
+    gap: 10px;
+  }
+  .welcome-actions > a {
+    flex: 1 1 auto;
+  }
+  .help-list > div {
+    grid-template-columns: 120px 1fr;
+  }
+}
+@media (max-width: 560px) {
+  .hero-name {
+    margin: 20px 0 18px;
+  }
+  .hero-name pre {
+    font-size: 8px;
+  }
+  .surname {
+    font-size: 39px;
+  }
+  .role-line {
+    font-size: 20px;
+  }
+  .intro {
+    font-size: 14px;
+    margin-top: 17px;
+  }
+  .welcome-metrics {
+    padding: 20px 0;
+    margin: 22px 0;
+    gap: 18px;
+  }
+  .welcome-metrics > div {
+    grid-template-columns: 135px 1fr;
+    gap: 8px;
+  }
+  .welcome-metrics strong {
+    font-size: 24px;
+  }
+  .welcome-actions {
+    align-items: stretch;
+  }
+  .welcome-actions > a {
+    padding: 12px 10px;
+    font-size: 12px;
+    gap: 7px;
+  }
+  .prompt input {
+    font-size: 16px;
+  }
+  .prompt label {
+    font-size: 11px;
+  }
+  .menu-options > button > span:first-child {
+    width: 102px;
+  }
+  .menu-heading {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+}
+@media (max-width: 370px) {
+  .hero-name pre {
+    font-size: 7.2px;
+  }
+  .surname {
+    font-size: 32px;
+  }
+  .role-line {
+    font-size: 18px;
+  }
+  .welcome-metrics > div {
+    grid-template-columns: 1fr 1fr;
+    gap: 9px;
+  }
+  .welcome-metrics strong {
+    font-size: 21px;
+  }
+  .welcome-metrics > div > span {
+    font-size: 10px;
+  }
+  .welcome-actions > a {
+    flex-basis: 100%;
+    font-size: 13px;
+  }
+  .help-list > div {
+    grid-template-columns: 100px 1fr;
+    font-size: 12px;
   }
 }
