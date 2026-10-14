@@ -22,7 +22,14 @@ import {
   Terminal,
   X,
 } from "lucide-react";
-import { commands, experience, profile, projects, skills } from "./data";
+import {
+  commands,
+  experience,
+  expertise,
+  profile,
+  projects,
+  skills,
+} from "./data";
 
 type Entry = {
   id: number;
@@ -282,25 +289,20 @@ function App() {
           </span>
         </div>
         <p className="intro">
-          I build enterprise e-commerce websites and AI-powered applications.
+          I build web applications, e-commerce experiences, and practical AI
+          tools.
         </p>
-        <div className="welcome-metrics">
-          <div>
-            <strong>
-              10<span>+</span>
-            </strong>
-            <span>years of experience</span>
-          </div>
-          <div>
-            <strong>
-              ~3s <span>→</span> ~1s
-            </strong>
-            <span>cart &amp; checkout response</span>
-          </div>
-          <div>
-            <strong>5</strong>
-            <span>developers · technical lead</span>
-          </div>
+        <div
+          className="welcome-expertise"
+          aria-label="Core skills and strengths"
+        >
+          {expertise.map((item) => (
+            <section key={item.title}>
+              <h2>{item.title}</h2>
+              <p className="expertise-stack">{item.stack}</p>
+              <p className="expertise-evidence">{item.evidence}</p>
+            </section>
+          ))}
         </div>
         <div className="action-row welcome-actions">
           <a
@@ -323,7 +325,7 @@ function App() {
     if (command === "about")
       return (
         <>
-          <SectionTitle eyebrow="01 / INTRODUCTION">
+          <SectionTitle eyebrow="04 / INTRODUCTION">
             The person behind the prompt.
           </SectionTitle>
           <p>
@@ -364,7 +366,7 @@ function App() {
         : skills;
       return (
         <>
-          <SectionTitle eyebrow="02 / TOOLKIT">
+          <SectionTitle eyebrow="01 / TOOLKIT">
             Tools I build with.
           </SectionTitle>
           <p className="muted">
@@ -419,13 +421,12 @@ function App() {
         );
       return (
         <>
-          <SectionTitle eyebrow="03 / SELECTED WORK">
+          <SectionTitle eyebrow="02 / SELECTED WORK">
             {detail ? detail.name : "Built to solve real problems."}
           </SectionTitle>
           {!detail && (
             <p className="muted">
-              Personal explorations and professional work. Select a project to
-              go deeper.
+              Full-stack, AI, and automation projects with real-world outcomes.
             </p>
           )}
           <div className="projects-list">
@@ -433,7 +434,7 @@ function App() {
               ? [detail]
               : query === "--all"
                 ? projects
-                : projects.slice(0, 3)
+                : projects.filter((p) => p.featured)
             ).map((p) => (
               <article className="project" key={p.id}>
                 <div className="project-number">{p.number}</div>
@@ -452,6 +453,10 @@ function App() {
                     </h3>
                   )}
                   <p>{p.description}</p>
+                  <p className="project-result">
+                    <ArrowRight size={14} />
+                    <span>{p.result}</span>
+                  </p>
                   {detail && (
                     <ul className="detail-list">
                       {p.details.map((d) => (
@@ -469,12 +474,19 @@ function App() {
             ))}
           </div>
           <div className="output-next">
-            {cmd("/Projects --all", "View all 5 projects")}{" "}
+            {detail || query === "--all"
+              ? cmd("/Projects", "Back to featured work")
+              : cmd(
+                  "/Projects --all",
+                  `View all ${projects.length} projects`,
+                )}{" "}
             <ArrowRight size={13} />
-            <span>
-              Professional work described from my resume; source code is not
-              published here.
-            </span>
+            {!detail && query !== "--all" && (
+              <span>
+                Includes product indexing and an AI interview platform in
+                development.
+              </span>
+            )}
           </div>
         </>
       );
@@ -482,7 +494,7 @@ function App() {
     if (command === "experience")
       return (
         <>
-          <SectionTitle eyebrow="04 / EXPERIENCE">
+          <SectionTitle eyebrow="03 / EXPERIENCE">
             A decade of building for the web.
           </SectionTitle>
           <div className="timeline">
@@ -495,6 +507,22 @@ function App() {
                   {e.place && ` · ${e.place}`}
                 </div>
                 <p>{e.description}</p>
+                {e.highlights.length > 0 && (
+                  <ul className="experience-highlights">
+                    {e.highlights.map((h) => (
+                      <li key={h.lead}>
+                        <strong>{h.lead}</strong> {h.detail}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+                {e.tags.length > 0 && (
+                  <div className="tags">
+                    {e.tags.map((t) => (
+                      <Tag key={t}>{t}</Tag>
+                    ))}
+                  </div>
+                )}
               </article>
             ))}
           </div>
@@ -513,7 +541,7 @@ function App() {
             {[
               [
                 "67%",
-                "faster cart & checkout",
+                "lower cart & checkout response time",
                 "Reduced response time from approximately 3 seconds to 1 second by consolidating GraphQL calls and redesigning shared checkout state.",
               ],
               [

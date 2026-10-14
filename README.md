@@ -2,7 +2,7 @@
 
 A terminal-style personal portfolio built with React, TypeScript, and Vite. Content is based on Harry Wu’s supplied resume.
 
-The home screen highlights experience, checkout performance, and technical leadership, with direct resume download and email contact links. The sidebar and slash-command picker provide access to the detailed portfolio.
+The home screen leads with skills across full-stack delivery, AI/automation, and reliable systems, with direct resume download and email contact links. Skills appear first in the sidebar. Projects show delivered work and outcomes before implementation details; Experience summarizes recent achievements and keeps earlier roles brief.
 
 Production URL: <https://harrywutech.github.io/ai-chat-bot-resume/>
 
@@ -33,7 +33,7 @@ Commands are case-insensitive and accept an optional leading slash.
 | `/About`                       | Personal introduction                                                      |
 | `/Skills`                      | Six skill groups, with links to relevant projects                          |
 | `/Skills AI`                   | A single skill group; also Frontend, Backend, Architecture, Data, or Cloud |
-| `/Projects`                    | Three featured projects                                                    |
+| `/Projects`                    | Three featured professional projects with outcomes                         |
 | `/Projects --all`              | All five projects                                                          |
 | `/Projects interview-platform` | A project’s details                                                        |
 | `/Experience`                  | Professional timeline                                                      |

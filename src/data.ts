@@ -7,23 +7,23 @@ export const profile = {
 
 export const commands = [
   {
-    name: "About",
-    description: "The person behind the prompt",
-    group: "portfolio",
-  },
-  {
     name: "Skills",
-    description: "My tools, technologies & craft",
+    description: "Core technologies & where I use them",
     group: "portfolio",
   },
   {
     name: "Projects",
-    description: "Selected things I’ve built",
+    description: "Delivered work & measurable outcomes",
     group: "portfolio",
   },
   {
     name: "Experience",
-    description: "A decade of building for the web",
+    description: "Professional roles & achievements",
+    group: "portfolio",
+  },
+  {
+    name: "About",
+    description: "The person behind the prompt",
     group: "portfolio",
   },
   {
@@ -55,6 +55,24 @@ export const commands = [
   },
   { name: "Clear", description: "A fresh terminal", group: "utility" },
   { name: "Home", description: "Back to the welcome screen", group: "utility" },
+];
+
+export const expertise = [
+  {
+    title: "Full-stack delivery",
+    stack: "React · TypeScript · Node.js · PHP/Laravel",
+    evidence: "10+ years shipping web applications.",
+  },
+  {
+    title: "AI & automation",
+    stack: "Python/FastAPI · LangGraph · RAG · n8n",
+    evidence: "RAG assistants and workflow automation.",
+  },
+  {
+    title: "Reliable systems",
+    stack: "AWS · CI/CD · APIs · Microservices",
+    evidence: "Performance, integration & production support.",
+  },
 ];
 
 export const skills = [
@@ -152,75 +170,82 @@ export const skills = [
 
 export const projects = [
   {
-    id: "interview-platform",
-    number: "01",
-    name: "AI Learning & Interview Platform",
-    type: "PERSONAL PROJECT · IN DEVELOPMENT",
-    description:
-      "A learning and interview platform with real-time voice interviews, streamed responses, and document-grounded assessment workflows.",
-    details: [
-      "Vue 3 and TypeScript frontend with Python/FastAPI, MySQL, token-based authentication, and SSE streaming.",
-      "RTC voice interviews with backend-issued access tokens, live captions, and persisted transcripts.",
-      "LangChain/LangGraph orchestration with OCR fallback, Qdrant retrieval, relevance filtering, and references to source documents.",
-      "Session summaries and cross-session profiles, with rate limiting, upload validation, and graceful degradation.",
-    ],
-    tags: ["Vue 3", "FastAPI", "LangGraph", "Qdrant", "SSE"],
-  },
-  {
     id: "commerce",
-    number: "02",
-    name: "Enterprise Commerce Re-platforming",
+    number: "01",
+    name: "Commerce Platform & Checkout",
     type: "TRAIL APPLIANCES · PROFESSIONAL WORK",
+    featured: true,
     description:
-      "Helped move a high-traffic Magento 2 monolith to a flexible Commercetools microservices architecture.",
+      "Led a Magento 2 to Commercetools migration and delivered catalog, checkout, payments, and customer-account features.",
+    result: "67% lower cart & checkout response time · ~3s → ~1s",
     details: [
-      "Hands-on technical lead for a five-developer team across architecture, implementation, code reviews, and mentoring.",
-      "Delivered catalog, search, cart, checkout, payments, accounts, and orders across React, Vue, Laravel, GraphQL, and REST.",
-      "Consolidated GraphQL calls and redesigned shared checkout state, reducing cart and checkout response time from approximately 3s to 1s.",
-      "Strengthened release practices, production monitoring, distributed tracing, and failure alerts.",
+      "Consolidated GraphQL calls and redesigned shared checkout state to reduce response time by 67%.",
+      "Served as hands-on technical lead for a five-developer team, covering architecture, code reviews, mentoring, and release readiness.",
+      "Delivered React/Vue and Laravel features, including payment callbacks, mobile redirects, and duplicate-safe order creation.",
+      "Improved production visibility with New Relic monitoring, distributed tracing, and failure alerts.",
     ],
-    tags: ["React", "Commercetools", "GraphQL", "Laravel"],
+    tags: ["React", "TypeScript", "GraphQL", "Laravel", "Commercetools"],
   },
   {
     id: "shopping-assistant",
-    number: "03",
+    number: "02",
     name: "RAG Shopping Assistant",
     type: "TRAIL APPLIANCES · PROFESSIONAL WORK",
+    featured: true,
     description:
-      "An AI shopping assistant for grounded product Q&A, side-by-side comparisons, and personalized suggested questions.",
+      "Built a shopping assistant that answers product questions and compares products using catalog-backed retrieval.",
+    result: "Delivered grounded product Q&A and side-by-side comparisons",
     details: [
-      "Orchestrated workflows using LangChain and LangGraph.",
       "Grounded responses in GraphQL product data and a Cloudflare KV knowledge base.",
-      "Used LangSmith tracing and evaluation to guide response-quality improvements.",
+      "Orchestrated workflows with LangChain/LangGraph and used LangSmith tracing and evaluation to guide response quality.",
     ],
-    tags: ["RAG", "LangChain", "LangGraph", "LangSmith"],
+    tags: ["RAG", "LangGraph", "LangChain", "LangSmith", "GraphQL"],
+  },
+  {
+    id: "automation",
+    number: "03",
+    name: "Inventory Operations Automation",
+    type: "TRAIL APPLIANCES · PROFESSIONAL WORK",
+    featured: true,
+    description:
+      "Replaced repetitive warehouse inventory refreshes with an hourly n8n workflow, despite no direct API integration.",
+    result: "Approximately 20 staff hours saved each week",
+    details: [
+      "Automated clearance-inventory refreshes on an hourly schedule without a direct API integration.",
+      "Saved approximately 20 staff hours per week by reducing recurring manual operations.",
+    ],
+    tags: ["n8n", "Workflow automation", "Systems integration"],
   },
   {
     id: "indexing",
     number: "04",
     name: "Event-driven Product Indexing",
     type: "TRAIL APPLIANCES · PROFESSIONAL WORK",
+    featured: false,
     description:
-      "A product-change pipeline that kept approximately 8,700 products synchronized with Algolia.",
+      "Kept catalog data synchronized with Algolia using event-driven updates, retries, and daily full syncs.",
+    result: "Approximately 8,700 products synchronized",
     details: [
-      "Node.js published commercetools Subscription events to Google Cloud Pub/Sub.",
-      "Laravel and MongoDB services on Cloud Run applied delta updates to Algolia.",
-      "Daily batched full syncs and automated retries complemented event-driven updates.",
+      "Published commercetools product-change events with Node.js and Google Cloud Pub/Sub; Laravel/MongoDB services on Cloud Run applied Algolia delta updates.",
+      "Added automated retries and daily batched full syncs to complement incremental updates.",
     ],
-    tags: ["Node.js", "Pub/Sub", "Laravel", "Algolia"],
+    tags: ["Node.js", "Pub/Sub", "Laravel", "MongoDB", "Algolia"],
   },
   {
-    id: "automation",
+    id: "interview-platform",
     number: "05",
-    name: "Inventory Operations Automation",
-    type: "TRAIL APPLIANCES · PROFESSIONAL WORK",
+    name: "AI Learning & Interview Platform",
+    type: "PERSONAL PROJECT · IN DEVELOPMENT",
+    featured: false,
     description:
-      "An n8n workflow that refreshed warehouse clearance inventory hourly and saved approximately 20 staff hours each week.",
+      "Building a learning platform with voice interviews, streamed responses, and document-grounded assessments.",
+    result: "Voice interviews + document-grounded assessment workflows",
     details: [
-      "Automated inventory operations despite the absence of a direct API integration.",
-      "Replaced repetitive manual refresh work with an hourly workflow.",
+      "Built Vue 3/TypeScript and Python/FastAPI features with authentication, SSE streaming, live captions, and persisted interview transcripts.",
+      "Implemented LangGraph workflows and Qdrant retrieval with OCR fallback, relevance filtering, and source references.",
+      "Added dialogue memory, rate limiting, upload validation, and graceful handling of retrieval/cache failures.",
     ],
-    tags: ["n8n", "Automation", "Inventory operations"],
+    tags: ["Vue 3", "Python", "FastAPI", "LangGraph", "Qdrant"],
   },
 ];
 
@@ -231,7 +256,29 @@ export const experience = [
     role: "Full Stack Software Developer",
     place: "Richmond, BC",
     description:
-      "Led enterprise commerce re-platforming, built AI shopping experiences, and shipped reliable full-stack features. Hands-on technical lead for five developers, with a focus on architecture, implementation, performance, and mentorship.",
+      "Hands-on developer and technical lead for a five-developer team, delivering commerce, AI, and automation systems.",
+    highlights: [
+      {
+        lead: "67% lower response time.",
+        detail:
+          "Reduced cart & checkout from approximately 3 seconds to 1 second.",
+      },
+      {
+        lead: "~20 staff hours saved weekly.",
+        detail: "Automated recurring warehouse inventory refreshes.",
+      },
+      {
+        lead: "Led commerce re-platforming.",
+        detail:
+          "Migrated Magento 2 to Commercetools and delivered catalog, checkout, payment, and account features.",
+      },
+      {
+        lead: "AI assistants & product indexing.",
+        detail:
+          "Built a grounded shopping assistant and an event-driven search pipeline for approximately 8,700 products.",
+      },
+    ],
+    tags: ["React", "TypeScript", "Node.js", "Laravel", "GraphQL", "LangGraph"],
   },
   {
     period: "JUL 2016 — FEB 2018",
@@ -239,7 +286,9 @@ export const experience = [
     role: "Web Developer",
     place: "Richmond, BC",
     description:
-      "Developed and maintained a Magento 2 commerce platform using PHP, JavaScript, MySQL, and Zend Framework. Delivered platform enhancements and content migrations with business stakeholders.",
+      "Built and maintained Magento 2 commerce features with PHP, JavaScript, and MySQL, delivering platform enhancements and content migrations with business stakeholders.",
+    highlights: [],
+    tags: [],
   },
   {
     period: "JAN 2013 — JAN 2016",
@@ -247,6 +296,8 @@ export const experience = [
     role: "Web Developer & IT roles",
     place: "",
     description:
-      "Built web applications and digital solutions across commerce, agency, travel, and higher education using PHP, WordPress, Magento, Drupal, and CMS platforms.",
+      "Delivered PHP/CMS websites across commerce, agency, travel, and higher education, building experience in systems integration and production support.",
+    highlights: [],
+    tags: [],
   },
 ];
