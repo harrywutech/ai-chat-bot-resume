@@ -65,7 +65,7 @@ export const expertise = [
   },
   {
     title: "AI & automation",
-    stack: "Python/FastAPI · LangGraph · RAG · n8n",
+    stack: "Python/FastAPI · LangChain · LangGraph · LangSmith · RAG · n8n",
     evidence: "RAG assistants and workflow automation.",
   },
   {
