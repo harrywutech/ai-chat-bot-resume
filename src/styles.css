@@ -1995,7 +1995,7 @@ kbd {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
-  margin: 23px 0;
+  margin: 18px 0;
   padding: 18px 0;
   gap: 22px;
 }
