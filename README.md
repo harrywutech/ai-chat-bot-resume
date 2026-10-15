@@ -4,7 +4,9 @@ A terminal-style personal portfolio built with React, TypeScript, and Vite. Cont
 
 The home screen leads with skills across full-stack delivery, AI/automation, and reliable systems, with direct resume download and email contact links. Skills appear first in the sidebar. Projects show delivered work and outcomes before implementation details; Experience summarizes recent achievements and keeps earlier roles brief.
 
-Production URL: <https://harrywutech.github.io/ai-chat-bot-resume/>
+Main website: <https://harrywutech.github.io/>
+
+Project website: <https://harrywutech.github.io/ai-chat-bot-resume/>
 
 ## Local development
 
@@ -67,6 +69,12 @@ The personal interview platform is labeled **in development**. Professional proj
 This is a static site with no server, API keys, or backend. Vite’s relative `base: './'` supports both a user site and a repository subdirectory. Build output, including the resume PDF, is in `dist/`.
 
 The repository is `harrywutech/ai-chat-bot-resume`. Pushes to `main` run `.github/workflows/deploy-pages.yml`, which installs locked dependencies with `npm ci`, checks TypeScript, builds the static site, and deploys `dist/` to GitHub Pages. The workflow can also be run manually from the Actions tab. GitHub Pages uses GitHub Actions as its deployment source.
+
+The root website directly serves the same application through `harrywutech/harrywutech.github.io`. That repository’s workflow checks out this source repository and builds it for the root site; it does not redirect. After pushing application updates, also deploy the root site so both addresses stay current:
+
+```sh
+gh workflow run deploy-pages.yml --repo harrywutech/harrywutech.github.io
+```
 
 This replaces the original Next.js placeholder while preserving the repository’s commit history and existing Pages address.
 
